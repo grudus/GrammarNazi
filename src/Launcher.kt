@@ -1,10 +1,10 @@
 fun main(args: Array<String>) {
-    println("Witaj w Gramatycznym Naziscie! Wprowadz zdanie:")
+    println("Witaj w Gramatycznym Naziscie!")
 
-    val userInput = readLine()
+    val userInput = "Litwo, ojczyzno moja! Ty jesteś jak zdrowie. Ile Cię trzeba cenić? Ten tylko się dowie, kto Cię stracił."
 
-    val grammarDoctor = GrammarDoctor(userInput!!)
+    val grammarDoctor = GrammarDoctor(userInput)
 
-    println("Podales: $userInput \nPoprawna forma tego zdania to: ${grammarDoctor.getCorrectedText()}")
+    grammarDoctor.sentences.forEach(::println)
 
 }
